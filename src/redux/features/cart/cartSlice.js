@@ -19,7 +19,6 @@ const cartSlice = createSlice({
         });
       }
     },
-    // ... inside reducers:
     increaseQuantity: (state, action) => {
       const product = state.find((product) => product.id === action.payload.id);
       if (product) product.quantity++;
